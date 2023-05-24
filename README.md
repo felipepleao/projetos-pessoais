@@ -18,7 +18,7 @@
   ## Calculadora  
   ### HTML, CSS e JS
 
-  > Projetos desenvolvidos com as seguintes tecnologias:
+  > Projeto desenvolvids com as seguintes tecnologias:
   <br><br>[![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)<br><br>
   > Link do projeto:
   > [Projeto](https://github.com/felipepleao/practical-PersonalProjects/tree/main/01-calculadora)
