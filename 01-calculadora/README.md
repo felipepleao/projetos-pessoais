@@ -10,9 +10,11 @@ Primeiro projeto prática aplicado na criação de uma calculadora.
 
 ## Deploy
 
-[DESSE LINK](https://felipepleao.github.io/practical-PersonalProjects/01-calculadora/).
+[LINK](https://felipepleao.github.io/practical-PersonalProjects/01-calculadora/).
 
 ## Screenshots
 
 ![App Screenshot](preview.png)
+
+## Gif
 ![App Screenshot](preview2.gif)
