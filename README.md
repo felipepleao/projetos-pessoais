@@ -21,7 +21,7 @@
   > Projetos desenvolvidos com as seguintes tecnologias:
   <br><br>[![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)<br><br>
   > Link dos projetos:
-  > [Projeto 01](https://github.com/felipepleao/practical-PersonalProjects/tree/main/01-calculadora)
+  > [Projeto](https://github.com/felipepleao/practical-PersonalProjects/tree/main/01-calculadora)
 
   ## Deploy
 
@@ -30,5 +30,5 @@
   ## Screenshots
 
   ![App Screenshot](assets/calculadora.png)
-  
+
   <br>
