@@ -5,7 +5,7 @@ const buttonClearC = document.querySelector(".button-clear-all");
 const buttonNumbers = document.querySelectorAll(".button-number");
 const buttonSpecial = document.querySelectorAll(".button-special.operator");
 const buttonEqual = document.querySelector(".button-special-equal");
-const buttonPercentage = document.querySelector('.button-percentage')
+const buttonPercentage = document.querySelector(".button-percentage");
 
 insertCalcule.value = 0;
 displayResult.value = 0;
@@ -18,6 +18,10 @@ function resetInput(event) {
   if (event.target.textContent === "CE") {
     insertCalcule.value = insertCalcule.value.slice(0, -1);
     insertCalcule.value == "" ? (insertCalcule.value = 0) : null;
+    if (activeEqual) {
+      insertCalcule.value = 0;
+      displayResult.value = 0;
+    }
   } else if (event.target.textContent === "C") {
     actionEqual = 1;
     insertCalcule.value = 0;
@@ -58,11 +62,14 @@ function operation(event) {
       break;
     case ",":
       selectOperator = ".";
+      // if(5 > 2) {
+        
       break;
   }
 
-  eval(insertCalcule.value > 0) ? insertCalcule.value += selectOperator : insertCalcule.value = 0 + selectOperator;
-  
+  eval(insertCalcule.value > 0)
+    ? (insertCalcule.value += selectOperator)
+    : (insertCalcule.value = 0 + selectOperator);
 
   if (activeEqual) {
     activeEqual = false;
@@ -106,15 +113,11 @@ function operationResult() {
 }
 
 function percentage() {
-  
-  if(eval(insertCalcule.value) > 0) {
-    
-    insertCalcule.value *= 1/100
-
+  if (eval(insertCalcule.value) > 0) {
+    insertCalcule.value = eval(insertCalcule.value) * 1 / 100;
+    displayResult.value = insertCalcule.value
   }
 }
-
-// insertCalcule.value = eval(insertCalcule.value) + insertCalcule.value.substring(1);
 
 // events
 
@@ -129,4 +132,4 @@ buttonSpecial.forEach((buttonSpecial) => {
 buttonEqual.addEventListener("click", operationResult);
 buttonClearCE.addEventListener("click", resetInput);
 buttonClearC.addEventListener("click", resetInput);
-buttonPercentage.addEventListener("click", percentage)
+buttonPercentage.addEventListener("click", percentage);

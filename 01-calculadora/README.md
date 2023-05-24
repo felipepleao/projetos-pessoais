@@ -14,4 +14,5 @@ Primeiro projeto prática aplicado na criação de uma calculadora.
 
 ## Screenshots
 
-![App Screenshot]()
+![App Screenshot](preview.png)
+![App Screenshot](preview2.gif)
