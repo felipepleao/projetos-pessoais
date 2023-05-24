@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="calculator">
+      <div class="calculation">
+        <input type="text" id="calculation-insert" disabled/>
+
+        <div class="calculation-operation">
+          <span class="calculation-equal"
+            ><svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3 12.625C3 12.2798 3.27982 12 3.625 12H17.375C17.7202 12 18 12.2798 18 12.625C18 12.9702 17.7202 13.25 17.375 13.25H3.625C3.27982 13.25 3 12.9702 3 12.625Z"
+                fill="#6B6B6B"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3 7.625C3 7.27982 3.27982 7 3.625 7H17.375C17.7202 7 18 7.27982 18 7.625C18 7.97018 17.7202 8.25 17.375 8.25H3.625C3.27982 8.25 3 7.97018 3 7.625Z"
+                fill="#6B6B6B"
+              />
+            </svg>
+          </span>
+          <input type="text" id="calculation-result" disabled/>
+        </div>
+      </div>
+
+      <div class="keyboard">
+        <table>
+          <tbody class="keyboard-calculator">
+            <tr>
+              <td><button class="button-clear-input">CE</button></td>
+              <td><button class="button-clear-all">C</button></td>
+              <td><button class="button-percentage">%</button></td>
+              <td><button class="button-special operator">&divide;</button></td>
+            </tr>
+
+            <tr>
+              <td><button class="button-number">7</button></td>
+              <td><button class="button-number">8</button></td>
+              <td><button class="button-number">9</button></td>
+              <td><button class="button-special operator">&times;</button></td>
+            </tr>
+
+            <tr>
+              <td><button class="button-number">4</button></td>
+              <td><button class="button-number">5</button></td>
+              <td><button class="button-number">6</button></td>
+              <td><button class="button-special operator">&minus;</button></td>
+            </tr>
+
+            <tr>
+              <td><button class="button-number">1</button></td>
+              <td><button class="button-number">2</button></td>
+              <td><button class="button-number">3</button></td>
+              <td><button class="button-special operator">&plus;</button></td>
+            </tr>
+
+            <tr>
+              <td>
+                <button class="button-module">
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.4937 5.50628C22.8354 5.84799 22.8354 6.40201 22.4937 6.74372L6.74372 22.4937C6.40201 22.8354 5.84799 22.8354 5.50628 22.4937C5.16457 22.152 5.16457 21.598 5.50628 21.2563L21.2563 5.50628C21.598 5.16457 22.152 5.16457 22.4937 5.50628Z"
+                      fill="#EBEBEB"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.625 7.875C2.625 7.39175 3.01675 7 3.5 7H12.25C12.7332 7 13.125 7.39175 13.125 7.875C13.125 8.35825 12.7332 8.75 12.25 8.75H3.5C3.01675 8.75 2.625 8.35825 2.625 7.875Z"
+                      fill="#EBEBEB"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.875 2.625C8.35825 2.625 8.75 3.01675 8.75 3.5V12.25C8.75 12.7332 8.35825 13.125 7.875 13.125C7.39175 13.125 7 12.7332 7 12.25V3.5C7 3.01675 7.39175 2.625 7.875 2.625Z"
+                      fill="#EBEBEB"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.875 20.125C14.875 19.6418 15.2668 19.25 15.75 19.25H24.5C24.9832 19.25 25.375 19.6418 25.375 20.125C25.375 20.6082 24.9832 21 24.5 21H15.75C15.2668 21 14.875 20.6082 14.875 20.125Z"
+                      fill="#EBEBEB"
+                    />
+                  </svg>
+                </button>
+              </td>
+              <td><button class="button-number">0</button></td>
+              <td><button class="button-special operator point">,</button></td>
+              <td><button class="button-special-equal operator">&equals;</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-calculator: #2d2a37;
+  --bg-button-special: #462878;
+  --bg-button-special-equal: #7f45e2;
+  --bg-button: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #2d2a37;
+  --color-numbers: #ebebeb;
+  --color-result: #6b6b6b;
+}
+
+body * {
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #807ece 0%, #8e7ece 100%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button,
+input {
+  border: none;
+}
+
+.calculator {
+  padding: 2.6rem 3.2rem 3.2rem;
+  width: 35.6rem;
+  background: var(--bg-calculator);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 188px 52px rgba(0, 0, 0, 0.01), 0px 120px 48px rgba(0, 0, 0, 0.04),
+    0px 68px 41px rgba(0, 0, 0, 0.15), 0px 30px 30px rgba(0, 0, 0, 0.26),
+    0px 8px 17px rgba(0, 0, 0, 0.29), inset 0px 6px 8px rgba(255, 255, 255, 0.1),
+    inset 0px -4px 5px rgba(0, 0, 0, 0.22);
+  border-radius: 48px;
+}
+
+.calculation {
+  margin-top: 2.2rem;
+}
+
+.button-module,
+.calculation-operation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calculation-result,
+#calculation-insert {
+  background-color: var(--bg-calculator);
+  width: 100%;
+}
+
+#calculation-insert {
+  font-size: 2rem;
+  color: var(--color-result);
+  text-align: end;
+}
+
+.calculation-operation {
+  margin-top: 1rem;
+}
+
+#calculation-result {
+  font-size: 3.2rem;
+  color: var(--color-numbers);
+  text-align: end;
+}
+
+.keyboard-calculator {
+  margin-top: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.keyboard-calculator tr {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.keyboard-calculator td button, 
+.keyboard-calculator td button.button-special.point {
+  font-size: 2.4rem;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #2d2a37;
+  box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04),
+    0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26),
+    0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+  color: var(--color-numbers);
+  width: 6.4rem;
+  height: 6.4rem;
+  cursor: pointer;
+}
+
+.keyboard-calculator td button:hover,
+.keyboard-calculator td button.button-special.point:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #393641;
+}
+
+.keyboard-calculator td button.button-special {
+  background: var(--bg-button-special);
+}
+
+.keyboard-calculator td button.button-special:hover {
+  background: #8146e7;
+}
+
+.keyboard-calculator td button.button-special-equal {
+  background: var(--bg-button-special-equal);
+}
+
+.keyboard-calculator td button.button-special-equal:hover {
+  background: #5320ac;
+}
+
+.keyboard-calculator td button.button-clear-input {
+  color: #8146e7;
+}
