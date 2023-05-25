@@ -62,14 +62,12 @@ function operation(event) {
       break;
     case ",":
       selectOperator = ".";
-      // if(5 > 2) {
-        
       break;
   }
 
-  eval(insertCalcule.value > 0)
+  eval(insertCalcule.value) > 0
     ? (insertCalcule.value += selectOperator)
-    : (insertCalcule.value = 0 + selectOperator);
+    : null;
 
   if (activeEqual) {
     activeEqual = false;
@@ -113,10 +111,8 @@ function operationResult() {
 }
 
 function percentage() {
-  if (eval(insertCalcule.value) > 0) {
-    insertCalcule.value = eval(insertCalcule.value) * 1 / 100;
-    displayResult.value = insertCalcule.value
-  }
+  insertCalcule.value = ((insertCalcule.value.slice(0, -1)) * 1) / 100;
+  displayResult.value = insertCalcule.value;
 }
 
 // events
