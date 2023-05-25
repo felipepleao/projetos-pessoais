@@ -40,14 +40,14 @@
   > Projeto desenvolvids com as seguintes tecnologias:
   <br><br>[![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)<br><br>
   > Link do projeto:
-  > [Projeto]()
+  > [Projeto](https://github.com/felipepleao/practical-PersonalProjects/tree/main/02-serieExercicios)
 
   ## Deploy
 
-  [LINK]().
+  [LINK](https://felipepleao.github.io/practical-PersonalProjects/02-serieExercicios/).
 
   ## Screenshots
 
-  ![App Screenshot](assets/serieExercicios.png.png)
+  ![App Screenshot](assets/serieExercicios.png)
 
   <br>

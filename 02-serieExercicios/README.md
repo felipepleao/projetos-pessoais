@@ -10,7 +10,7 @@ Este projeto tem como objetivo acompanhar o progresso de exercícios por meio de
 
 ## Deploy
 
-[LINK]().
+[LINK](https://felipepleao.github.io/practical-PersonalProjects/02-serieExercicios/).
 
 ## Screenshots
 
