@@ -26,7 +26,7 @@
 
   ## Deploy
 
-  [LINK](https://felipepleao.github.io/practical-PersonalProjects/01-calculadora/).
+  [LINK](https://felipepleao.github.io/projetos-pessoais/01-calculadora/).
 
   ## Screenshots
 
@@ -44,7 +44,7 @@
 
   ## Deploy
 
-  [LINK](https://felipepleao.github.io/practical-PersonalProjects/02-serieExercicios/).
+  [LINK](https://felipepleao.github.io/projetos-pessoais/02-serieExercicios/).
 
   ## Screenshots
 
