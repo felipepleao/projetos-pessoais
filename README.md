@@ -7,6 +7,7 @@
 
   <p align="center">
     <a href="#-Calculadora">Calculadora</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#-">Calculadora</a>&nbsp;&nbsp;|&nbsp;&nbsp;
     
   </p>
 
@@ -30,5 +31,23 @@
   ## Screenshots
 
   ![App Screenshot](assets/calculadora.png)
+
+  <br>
+
+  ## "Controle de Desenvolvimento de Exercícios por Repetições e Séries" 
+  ### HTML, CSS e JS
+
+  > Projeto desenvolvids com as seguintes tecnologias:
+  <br><br>[![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)<br><br>
+  > Link do projeto:
+  > [Projeto]()
+
+  ## Deploy
+
+  [LINK]().
+
+  ## Screenshots
+
+  ![App Screenshot](assets/serieExercicios.png.png)
 
   <br>
