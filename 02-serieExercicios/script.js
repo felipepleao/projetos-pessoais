@@ -1,8 +1,9 @@
 const inputRepeat = document.querySelectorAll(".inputRepeat");
 const repeatSelect = document.querySelectorAll(".repeatSelect");
 const serieChange = document.querySelector(".serie-n");
-let serieChangeNumber = Number(serieChange.textContent)
+let serieChangeNumber = Number(serieChange.textContent);
 let finish = false;
+let reset = false;
 
 // Obtenha a barra de progresso
 let progressBar = document.querySelector(".progress");
@@ -32,14 +33,13 @@ function repeatProgress(event) {
     updateProgress(75);
   }
   if (event.target.name === "repeatFour") {
-    // repeatSelect[3].setAttribute("disabled");
     updateProgress(100);
     finish = true;
   }
 
   if (finish) {
     repeatReset();
-    updateProgress(0)
+    updateProgress(0);
     finish = false;
   }
 }
@@ -55,14 +55,18 @@ function repeatReset() {
   repeatSelect[2].checked = false;
   repeatSelect[3].checked = false;
 
-	serieChangeNumber += 1
-	serieChange.textContent = serieChangeNumber
+  serieChangeNumber += 1;
+  serieChange.textContent = serieChangeNumber;
 
-	if (serieChange.textContent > 4) {
-		alert('Complete')
-		updateProgress(0)
-		serieChange.textContent = 1
-	}
+  serieChangeNumber > 4 ? resetProgress() : null;
+ 
+}
+
+function resetProgress() {
+  updateProgress(0);
+  serieChangeNumber = 1;
+  serieChange.textContent = 1;
+  alert("Complete");
 }
 
 inputRepeat.forEach((input) => {
