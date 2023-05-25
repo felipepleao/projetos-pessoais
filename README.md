@@ -7,7 +7,7 @@
 
   <p align="center">
     <a href="#-Calculadora">Calculadora</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#-">Calculadora</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#- Desenvolvimento de Exercícios"> Desenvolvimento de Exercícios</a>&nbsp;&nbsp;|&nbsp;&nbsp;
     
   </p>
 
