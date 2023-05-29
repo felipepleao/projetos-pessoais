@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RepCounter</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="" type="module" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="section-settings card-style hidden">
+        <div class="container">
+          <div class="settings-title">
+            <h1>RepCounter</h1>
+            <img
+              src="assets/gym.svg"
+              alt="Ilustração de uma mulher exercitando o braço com halteres "
+            />
+          </div>
+
+          <div class="settings-form">
+            <h2>
+              Configurações<br />
+              Repetições e Séries
+            </h2>
+
+            <div class="form-settings">
+              <div class="form-group">
+                <label for="">Número Séries:</label>
+                <input class="input-style" type="number" name="" id="" />
+              </div>
+              <div class="form-group">
+                <label for="">Intervalo Séries:</label>
+                <input class="input-style" type="number" name="" id="" />
+              </div>
+              <div class="form-group">
+                <label for="">Número Repetições:</label>
+                <input class="input-style" type="number" name="" id="" />
+              </div>
+              <div class="form-group">
+                <label for="">Intervalo Repetições:</label>
+                <input class="input-style" type="number" name="" id="" />
+              </div>
+
+              <button class="button-config">Iniciar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-score card-style ">
+        <div class="container">
+          <h1>Progresso</h1>
+
+          <div class="bar">
+            <div class="progress-bar"></div>
+          </div>
+
+          <div class="timer-display">
+            <h3 class="timer-title">Tempo de Descanso</h3>
+            <p class="timer">
+              <span class="minutes">1</span>:<span class="seconds">30</span>
+            </p>
+          </div>
+
+          <h2>Repetições</h2>
+
+          <div class="form-rep">
+            <div class="input-rep">
+              <input type="checkbox" id="repetitionOne" />
+              <label for="repetitionOne">1ª Repetição</label>
+            </div>
+            <div class="input-rep">
+              <input type="checkbox" id="repetitionTwo" />
+              <label for="repetitionTwo">2ª Repetição</label>
+            </div>
+            <div class="input-rep">
+              <input type="checkbox" id="repetitionThree" />
+              <label for="repetitionThree">3ª Repetição</label>
+            </div>
+            <div class="input-rep">
+              <input type="checkbox" id="repetitionFour" />
+              <label for="repetitionFour">4ª Repetição</label>
+            </div>
+
+            <button class="button-cancel">Resetar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal-sucess ">
+      <div class="modal-container card-style">
+        <img src="./assets/emoji.svg" alt="Imagem de um emoji sorridente" />
+
+        <p class="modal-text">
+          Parabéns! <br />
+          Concluído com sucesso!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

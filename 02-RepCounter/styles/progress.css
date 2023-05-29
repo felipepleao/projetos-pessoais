@@ -1,0 +1,57 @@
+.section-score h1,
+.section-score h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.timer-display {
+  margin: 3rem 0 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.bar {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.progress-bar {
+  margin: 0 auto;
+  width: 197px;
+  height: 197px;
+  background: linear-gradient(122.58deg, #90f7ec 14.7%, #90f7ec 82.59%);
+  border-radius: 999px;
+}
+
+.timer-title {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.form-rep {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+
+.input-rep {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.button-cancel {
+  width: 100%;
+  margin-top: 4rem;
+  color: var(--text-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background: linear-gradient(121.94deg, #DF9780 15.98%, #A66DE9 82.85%);
+}

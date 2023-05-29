@@ -1,0 +1,42 @@
+.settings-title,
+.settings-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.settings-form,
+.settings-title img,
+.form-settings {
+  margin-top: 3rem;
+}
+
+.form-settings {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.form-group label {
+  font-size: 1.6rem;
+}
+
+.input-style {
+  width: 4rem;
+}
+
+.button-config {
+  margin-top: 1rem;
+  color: var(--text-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background: linear-gradient(121.94deg, #ce9ffc 15.98%, #7367f0 82.85%);
+}

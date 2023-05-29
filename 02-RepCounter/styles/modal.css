@@ -1,0 +1,28 @@
+.modal-container {
+  padding: 3rem;
+}
+
+.modal-sucess.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-sucess {
+  text-align: center;
+  font-size: 2rem;
+
+  position: absolute;
+  inset: 0;
+
+  display: grid;
+  place-content: center;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-text {
+  margin-top: 1.6rem;
+  color: #81fbb8;
+}
