@@ -45,6 +45,6 @@ body * {
 }
 
 .container {
-  padding: 3rem 5rem 3rem;
+  padding: 3rem;
   width: clamp(32rem, 80vw, 39rem);
 }

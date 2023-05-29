@@ -8,7 +8,7 @@
 .settings-form,
 .settings-title img,
 .form-settings {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .form-settings {
@@ -16,22 +16,42 @@
   gap: 1rem;
 }
 
-.form-group {
+.form-settings div:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.form-group-timer {
+  font-size: 1.6rem;
   display: flex;
-  gap: 2rem;
+  align-items: center;
   justify-content: space-between;
 }
 
-.form-group label {
-  font-size: 1.6rem;
+.timer-wrapper {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0 2rem;
+  box-shadow: 3px 4px 26px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
 }
 
-.input-style {
-  width: 4rem;
+.count.series,
+.timer-count.series,
+.count.repetitions,
+.timer-count.repetitions {
+  text-align: end;
+  width: 5rem;
+}
+
+.button-timer {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
 }
 
 .button-config {
-  margin-top: 1rem;
+  margin-top: 2rem;
   color: var(--text-color);
   font-weight: 600;
   text-transform: uppercase;
