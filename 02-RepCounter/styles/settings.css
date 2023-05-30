@@ -45,12 +45,14 @@
 }
 
 .button-timer {
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 1.4rem;
 }
 
 .button-config {
+  cursor: pointer;
   margin-top: 2rem;
   color: var(--text-color);
   font-weight: 600;
