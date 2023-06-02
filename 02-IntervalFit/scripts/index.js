@@ -1,6 +1,7 @@
 import { elements } from "./elements.js";
 import Controls from "./controls.js";
 import CreateTimerDisplay from "./timercreate.js";
+import CreateSeries from "./serieCreate.js";
 import TimerCountdown from "./timer.js";
 
 const {
@@ -32,14 +33,19 @@ const timerCreate = CreateTimerDisplay({
   minutesSeries,
   secondsSeries,
   timerSection,
-})
+});
+
+const createSeries = CreateSeries({
+  countSeries,
+  inputSerie,
+});
 
 const timerCountdown = TimerCountdown({
   countSeries,
   minutesSeries,
   secondsSeries,
   inputSerie,
-})
+});
 
 //events
 buttonAddSeries.addEventListener("click", () => {
@@ -59,6 +65,7 @@ buttonRemoveTimeSeries.addEventListener("click", () => {
 });
 
 buttonStart.addEventListener("click", () => {
+  createSeries.serieCreate();
   controls.startSettings();
   timerCreate.createTimeCountdown();
 });
