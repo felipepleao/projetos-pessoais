@@ -7,7 +7,7 @@ export default function CreateTimerDisplay({
   function createTimeCountdown() {
     const divTimer = document.createAttribute("div");
     let minutes = Number(minutesSeries.textContent);
-    let seconds = Number(secondsSeries.textContent.padStart("2", "0"));
+    let seconds = secondsSeries.textContent.padStart("2", "0");
   
     divTimer.innerHTML = `
     <div>

@@ -1,11 +1,7 @@
-export default function CreateSeries({
-  countSeries,
-  inputSerie,
-}) {
-
+export default function CreateSeries({ countSeries, inputSerie }) {
+  let checkboxArray = [];
   function serieCreate() {
     let countS = Number(countSeries.textContent);
-    let checkboxArray = [];
 
     for (let i = 1; i <= countS; i++) {
       const div = document.createElement("div");
@@ -22,17 +18,32 @@ export default function CreateSeries({
     }
 
     checkboxArray.forEach((checkbox) => {
-      function seriesChecked(event) {
-        let idCheckbox = checkbox.id;
+      let idCheck = checkbox.id.match(/\d+/g).join("");
+      if (idCheck > 1) {
         checkbox.setAttribute("disabled", "");
+      }
+    });
 
-        if (event.target.id === idCheckbox) {
-          checkbox.setAttribute("disabled", "");
-          startCountdown();
+    function completeSerie(event) {
+      for (let i = 0; i < checkboxArray.length; i++) {
+        let idCheck = checkboxArray[i].id.match(/\d+/g).join("");
+        let eventIdCheck = event.target.id.match(/\d+/g).join("");
+
+        if (eventIdCheck === idCheck) {
+          checkboxArray[i].setAttribute("disabled", "");
+          console.log("comece a contar");
+          i++;
+          if (i < checkboxArray.length) {
+            checkboxArray[i].removeAttribute("disabled");
+          } else {
+            console.log('abre o modal')
+          }
         }
       }
+    }
 
-      checkbox.addEventListener("click", seriesChecked);
+    checkboxArray.forEach((checkbox) => {
+      checkbox.addEventListener("click", completeSerie);
     });
   }
 
