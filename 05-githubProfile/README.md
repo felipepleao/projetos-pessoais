@@ -24,3 +24,6 @@
 
   Este projeto consiste nas aplicações de conceitos como: classes, desestruturação, imutabilidade, localStorage, async/await, etc.
 
+  ## 🔖 Layout
+
+  Você pode visualizar o projeto através [DESSE LINK](https://gitfav-nu.vercel.app/).

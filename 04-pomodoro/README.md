@@ -22,4 +22,6 @@
 
   Este projeto consiste em interligar HTML e CSS com o DOM JavaSCript.
 
+ ## 🔖 Layout
 
+  Você pode visualizar o projeto através [DESSE LINK](https://felipepleao.github.io/courseProjects-rocketseat/projeto14--stg-05/).
