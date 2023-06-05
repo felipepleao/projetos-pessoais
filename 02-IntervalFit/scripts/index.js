@@ -1,7 +1,7 @@
 import { elements } from "./elements.js";
 import Controls from "./controls.js";
 import CreateTimerDisplay from "./timercreate.js";
-import CreateSeries from "./serieCreate.js";
+import CreateSeries from "./seriecreate.js";
 import TimerCountdown from "./timer.js";
 
 const {
