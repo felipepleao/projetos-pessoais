@@ -1,3 +1,6 @@
+import TimerCountdown from "./timer.js";
+
+
 export default function CreateSeries({ countSeries, inputSerie }) {
   let checkboxArray = [];
   function serieCreate() {
@@ -31,6 +34,7 @@ export default function CreateSeries({ countSeries, inputSerie }) {
 
         if (eventIdCheck === idCheck) {
           checkboxArray[i].setAttribute("disabled", "");
+          TimerCountdown.sta
           console.log("comece a contar");
           i++;
           if (i < checkboxArray.length) {
